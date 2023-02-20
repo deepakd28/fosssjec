@@ -4,55 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team  name</title>
-    <link rel="icon" type="image/x-icon" href="Logo address">
+    <title>FOSS</title>
+    <link rel="icon" type="image/x-icon" href="foss_logo.png">
     <link rel="stylesheet" href="style.css">
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-      }
-      
-      #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: #555;
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-      }
-      
-      #myBtn:hover {
-        background-color: #555;
-      }
-      </style>
   </head>
 <body>
+  <div class="nav">
     <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#About">About</a></li>
-  </li>
+  <li><a href="#top">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#history">History</a></li>
+  <li><a href="#alternatives">Alternatives</a></li>
 </ul>
+
+</div>
 <img src="foss_logo.png" alt="img error" class="img rotate">
 <img src="firefox_logo.png" alt="img erroe" class="img rotate2">
 <img src="linux_logo.png" alt="img error" class="img rotate3">
 <img src="gnu_logo.png" alt="img error" class="img1 rotate4">
 <img src="gimp_logo.png" alt="img error" class="img rotate5">
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <div class="herotext">
 <h1>
     what is<br>FOSS ?</h1>
 </div>
-
-      <div style="margin-top:22%;padding: 20px;background-color: white;">
-     <h2><b>About FLOSS:</b></h2>
+<section id="about">
+      <div style="margin-top:20%;padding: 20px;background-color: white;">
+        <h2><b>About FLOSS:</b></h2>
 <p>Free and open-source software (FOSS) is a term used to refer to groups of software consisting of both free software and open-source software. Where anyone is freely
   licensed to use, copy, study, and change the software in any way, and the source code is openly shared so that people are encouraged to voluntarily improve the design
   of the software. This is in contrast to proprietary software, where the software is under restrictive copyright licensing and the source code is usually hidden
@@ -63,8 +40,10 @@ open-source operating systems such as Linux and descendants of BSD are widely ut
 and other devices. Free-software licenses and open-source licenses are used by many software packages. The free software movement and the open-source software
 movement are online social movements behind widespread production and adoption of FOSS, with the former preferring to use the terms FLOSS or free/libre.</p>
 </div>
+</section>
+<section id="history">
 <div style="padding: 20px;background-color:rgb(34, 33, 33);color: rgb(202, 202, 202);">
-  <h2>History</h2>
+<h2>History</h2>
 <p>From the 1950s and on through the 1980s, it was common for computer users to have the source code for all programs they used, and the permission and ability to modify
   it for their own use.
   By the late 1960s, the prevailing business model around software was changing. A growing and evolving software industry was competing with the hardware manufacturer's 
@@ -75,8 +54,9 @@ movement are online social movements behind widespread production and adoption o
   In the 1970s and early 1980s, some parts of the software industry began using technical measures (such as distributing only binary copies of computer programs) to prevent
   computer users from being able to use reverse engineering techniques to study and customize software they had paid for. In 1980, the copyright law was extended to computer
   programs in the United States—previously, computer programs could be considered ideas, procedures, methods, systems, and processes, which are not copyrightable.</p>
-
-</div>  
+</div>
+</section>  
+<section id="alternatives">
 <div style="padding: 20px;background-color: white;">
   <h2>Best Alternatives</h2>
   <h3><b>Windows – Linux:</b></h3>
@@ -112,26 +92,6 @@ movement are online social movements behind widespread production and adoption o
     <img src="arrow.png" alt="img error" class="arr2">
     <img src="gimp_logo_black.png" alt="img error" class="arr8">
     </div>
-    <script>
-      // Get the button
-      let mybutton = document.getElementById("myBtn");
-      
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-      </script>
+  </section>
 </body>
 </html>
